@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: eurostile;
+}
+/* ---------HEADER-------- */
+header{
+    background-color: white;
+    height: fit-content;
+}
+#headerlinje{
+    height: fit-content;
+    border: 2px solid #707070;
+    border-left: unset;
+    border-right: unset;
+    clear: both;
+    left: 0;
+    margin-top: 2%;
+    width: 100%;
+    color: #707070;
+}
+header img{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 5px;
+    height: 60px;
+}
+#headerlinje button{
+    border: #707070 2px solid;
+    border-top: unset;
+    border-bottom: unset;
+    margin-left: 10%;
+    background-color: unset;
+    color: #00529C;
+    font-weight: bold;
+    font-size: 10px;
+    height: 30px;
+}
+/* -------HERO------- */
+.hero{
+    background-image: url(../ProjektRealLife2/img/Fodboldskole.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* height: 3928473; */
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 35px;
+}
+#video video{
+    background-color: black;
+    width: 100vw;
+    border: #FFFFFF solid 4px;
+    border-right: unset;
+    border-left: unset;
+}
+#box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    border: unset;
+    border-radius: 10px;
+    width: 80%;
+    background-color: rgb(0, 82, 156, 0.75);
+    color: white;
+}
+#inkl #box ul{
+    padding: 20px;
+    list-style-type: none;
+}
