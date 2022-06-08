@@ -3,6 +3,12 @@
     margin: 0;
     font-family: eurostile;
 }
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
 /* ---------HEADER-------- */
 header{
     background-color: white;
@@ -15,7 +21,6 @@ header{
     border-right: unset;
     clear: both;
     left: 0;
-    margin-top: 2%;
     width: 100%;
     color: #707070;
 }
@@ -35,19 +40,23 @@ header img{
     font-weight: bold;
     font-size: 10px;
     height: 30px;
+    cursor: pointer;
 }
 /* -------HERO------- */
 .hero{
-    background-image: url(../KoldingIF-Landing/img/Fodboldskole.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.2)), url(../KoldingIF-Landing/img/nicklas_er_en_lort_1.png);
+    background-blend-mode: darken;
     background-repeat: no-repeat;
-    background-position: center;
-    /* height: 3928473; */
+    background-size: cover;
+    background-position: 40% 30%;
+    border-bottom: #003473 solid 5px;
 }
 h1{
     display: flex;
     justify-content: center;
     color: white;
     font-size: 35px;
+    padding: 20px;
 }
 #video video{
     background-color: black;
@@ -56,19 +65,371 @@ h1{
     border-right: unset;
     border-left: unset;
 }
+#nonedesk{
+    display: none;
+}
 #box{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin: 0 auto;
+    margin-top: 20px;
     border: unset;
-    border-radius: 10px;
-    width: 80%;
+    border-radius: 20px;
+    width: 70%;
     background-color: rgb(0, 82, 156, 0.75);
     color: white;
 }
+#inkl #box h2{
+    padding-top: 10px;
+    font-weight: bolder;
+    font-size: 25px;
+}
 #inkl #box ul{
-    padding: 20px;
+    padding: 10px;
     list-style-type: none;
+    margin: 10px;
+}
+#inkl #box li{
+    padding: 5px;
+}
+#inkl #box h3{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 25px;
+    padding: 20px;
+}
+#inkl button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    height: fit-content;
+    width: 150px;
+    text-align: center;
+    background-color: #FFFFFF;
+    color: #0055A5;
+    font-size: 20px;
+    border: 3px #FFFFFF solid;
+    border-radius: 40px;
+    -webkit-transition: 0.5s;
+}
+#inkl h4{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 10px;
+    font-weight: lighter;
+}
+/* --------- TILMELDING/INFORMATION------------ */
+#tilmeld h2{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #00529C;
+    margin: 20px;
+}
+#tilmeld p{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin: 20px 40px;
+    font-size: 16px;
+}
+.sponsor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.sponsor img{
+    height: 100px;
+    padding: 10px;
+}
+.sponsor #sport24{
+    height: 110px;
+}
+/* -----TILMELDINGSKNAPPER------ */
+#tmknapper div{
+    margin: 15px 40px;
+    padding: 20px;
+    border: unset;
+    border-radius: 10px;
+    background-color: #E0E0E0;
+    box-shadow: 5px 5px 10px rgba(86, 86, 86, 0.6);
+    color: #003473;
+}
+#tmknapper p{
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+}
+#tmknapper div button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    height: fit-content;
+    width: 200px;
+    text-align: center;
+    background-color: #0055A5;
+    color: #FFFFFF;
+    font-size: 20px;
+    border: 3px #0055A5 solid;
+    border-radius: 40px;
+}
+#tmknapper{
+    display: flex;
+    flex-direction: column;
+}
+h6{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color: #003473;
+    margin: 15px;
+}
+
+/* --------MEDIA QUERIES-------- */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+h1{
+    font-size: 45px;
+}
+#video video{
+    display: flex;
+    margin: 0 auto;
+    background-color: black;
+    width: 90vw;
+    border: #FFFFFF solid 4px;
+    margin-bottom: 40px;
+}
+#inkl h4{
+    font-size: 25px;
+}
+#inkl #box h2{
+    font-size: 35px;
+}
+#inkl #box li{
+    font-size: 20px;
+}
+#inkl #box h3{
+    font-size: 35px;
+}
+#inkl h4{
+    font-size: 30px;
+}
+#tilmeld p{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin: 20px 100px;
+    font-size: 16px;
+}
+.sponsor img{
+    height: 130px;
+    padding: 10px;
+}
+.sponsor #sport24{
+    height: 140px;
+}
+#tmknapper div{
+    margin: 15px 20%;
+}
+h6{
+    font-size: 25px;
+}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1300px){
+    h1{
+        font-size: 55px;
+    }
+    #video video{
+        display: flex;
+        margin: 0 auto;
+        background-color: black;
+        width: 80vw;
+        border: #FFFFFF solid 4px;
+        margin-bottom: 40px;
+    }
+    #inkl h4{
+        font-size: 25px;
+    }
+    #inkl #box h2{
+        font-size: 35px;
+    }
+    #inkl #box li{
+        font-size: 20px;
+    }
+    #inkl #box h3{
+        font-size: 35px;
+    }
+    #inkl h4{
+        font-size: 30px;
+    }
+    #tilmeld h2{
+        font-size: 50px;
+    }
+    #tilmeld p{
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        margin: 20px 100px;
+        font-size: 16px;
+    }
+    .sponsor img{
+        height: 130px;
+        padding: 10px;
+    }
+    .sponsor #sport24{
+        height: 140px;
+    }
+    #tmknapper div{
+        margin: 15px 20%;
+    }
+    h6{
+        font-size: 25px;
+    }
+}
+@media only screen and (min-width: 1301px){
+    header img{
+        height: 80px;
+    }
+    #headerlinje button{
+        font-size: 15px;
+        height: 40px;
+    }
+    .hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 15%;
+        height: 80vh;
+    }
+    h1{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 45px;
+        padding: 0%;
+    }
+    #video video{
+        display: flex;
+        background-color: black;
+        width: 45vw;
+        height: 55vh;
+        border: #FFFFFF solid 4px;
+    }
+    #nonedesk{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 30px;
+        font-weight: lighter;
+        color: #FFFFFF;
+    }
+    #box{
+        padding: 20px;
+        width: fit-content;
+    }
+    #inkl h4{
+        display: none;
+        font-size: 25px;
+    }
+    #inkl #box h2{
+        font-size: 35px;
+    }
+    #inkl #box li{
+        font-size: 20px;
+    }
+    #inkl #box h3{
+        font-size: 35px;
+    }
+    #inkl h4{
+        font-size: 30px;
+    }
+    #inkl button:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        -webkit-transition: 0.5s;
+        font-weight: bolder;
+    }
+    .tilmeldspons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #tilmeld h2{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 50px;
+        margin: 20px 120px;
+    }
+    #tilmeld p{
+        display: flex;
+        justify-content: flex-start;
+        text-align: left;
+        width: 60vw;
+        font-size: 22px;
+        margin: 20px 120px;
+    }
+    #spons{
+        width: 30vw;
+    }
+    .sponsor{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        width: 20vw;
+    }
+    .sponsor img{
+        height: auto;
+        width: 170px;
+        padding: 10px;
+    }
+    .sponsor #sport24{
+        height: auto;
+        width: 170px;
+    }
+    #tmknapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    #tmknapper div{
+        width: 400px;
+        margin: 15px 40px;
+        padding: 20px;
+        border: unset;
+        border-radius: 10px;
+        background-color: #E0E0E0;
+        color: #0055A5;
+        -webkit-transition: 0.5s;
+    }
+    #tmknapper div:hover{
+        transform: scale(1.1);
+        -webkit-transition: 0.5s;
+    }
+    #tmknapper p{
+        display: flex;
+        justify-content: center;
+        font-weight: bolder;
+        font-size: 25px;
+    }
+    #tmknapper div button:hover{
+        background-color: white;
+        color: #003473;
+        border: #003473 3px solid;
+        cursor: pointer;
+    }
+    h6{
+        font-size: 30px;
+    }
 }
