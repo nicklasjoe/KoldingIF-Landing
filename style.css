@@ -61,6 +61,7 @@ h1{
 #video video{
     background-color: black;
     width: 100vw;
+    max-width: 100%;
     border: #FFFFFF solid 4px;
     border-right: unset;
     border-left: unset;
@@ -93,6 +94,7 @@ h1{
 }
 #inkl #box li{
     padding: 5px;
+    font-size: 1.4em;
 }
 #inkl #box h3{
     font-weight: bolder;
